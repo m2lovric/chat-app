@@ -1,5 +1,6 @@
 $gray-dark: #282c34;
 $gray-light: #3e4147;
+$green: #26de81;
 
 .App {
   background-color: $gray-dark;
@@ -74,6 +75,17 @@ $gray-light: #3e4147;
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
+
+    &-message {
+      width: 150px;
+      height: auto;
+      min-height: 50px;
+      background-color: #26de81;
+      border-radius: 5px;
+      margin: 10px 20px;
+      justify-self: flex-end;
+    }
 
     &-input {
       bottom: 10px;
