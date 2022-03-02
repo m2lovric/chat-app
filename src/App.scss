@@ -1,0 +1,111 @@
+$gray-dark: #282c34;
+$gray-light: #3e4147;
+
+.App {
+  background-color: $gray-dark;
+  width: 100%;
+  &-header {
+    max-width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 0 25px;
+      height: 42px;
+      background-color: $gray-light;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  &-container {
+    background-color: $gray-light;
+    width: 100%;
+    height: calc(100vh - 60px);
+  }
+
+  &-main {
+    max-width: 480px;
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-group_btn {
+      width: 300px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background-color: $gray-dark;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-chat {
+    background-color: $gray-light;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+
+    &-input {
+      bottom: 10px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: 70px;
+      box-sizing: border-box;
+
+      .input {
+        width: 80%;
+        border-radius: 12px;
+        border: none;
+        padding-left: 20px;
+        font-size: 1rem;
+        background-color: $gray-dark;
+        color: white;
+        height: 100%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .send {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+    }
+  }
+}
