@@ -80,11 +80,22 @@ $green: #26de81;
     &-message {
       width: 150px;
       height: auto;
-      min-height: 50px;
+      min-height: 36px;
       background-color: #26de81;
-      border-radius: 5px;
+      border-radius: 16px;
       margin: 10px 20px;
       justify-self: flex-end;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .me {
+      align-self: flex-end;
     }
 
     &-input {
